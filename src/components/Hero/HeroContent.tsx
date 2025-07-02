@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Hero.module.css';
 
 interface HeroContentProps {
   className?: string;
@@ -6,14 +7,28 @@ interface HeroContentProps {
 
 const HeroContent: React.FC<HeroContentProps> = ({ className }) => {
   return (
-    <div className={`flex flex-row flex-wrap justify-between items-center w-full ${className ?? ''}`}>
-      <div className="flex flex-col py-10 space-y-4 relative z-10 text-white max-w-[calc(100%-620px)]">
-        <h2 className="font-bold text-4xl" style={{ transform: 'translateY(20px)' }}>
-          Portfolios responsive, rápidos y elegantes
-        </h2>
+    <div
+      className={`flex flex-col justify-center items-center w-full h-full px-4 sm:px-6 md:px-8 ${className ?? ''}`}
+    >
+      <div className="max-w-md w-full text-left"> 
+        <p className={`${styles.holaSoy} text-grayDark text-1xl font-semibold mb-4`}>
+          Hola, soy
+        </p>
+        <p className={`${styles.nombre} text-bluePrimary text-5xl font-bold mb-4`}>
+          Álvaro Sánchez.
+        </p>
+        <p className={`${styles.textoPresentacion} text-grayDark font-bold text-5xl mb-4 `}>
+          Front developer.
+        </p>
+        <p className={`${styles.textoPresentacion} text-grayLight text-m `}>
+          Desarrollo webs limpias, accesibles y con estilo.
+        </p>
       </div>
     </div>
   );
 };
 
 export default HeroContent;
+
+
+

@@ -1,0 +1,17 @@
+
+
+.defaultColor {
+    color: #8B949E;
+    transition: all 0.3s ease-in;
+
+}
+
+.defaultColor:hover {
+    color: #bdc8d4;
+
+}
+
+
+.barColor {
+    background-color: #8B949E;
+}

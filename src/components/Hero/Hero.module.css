@@ -1,10 +1,22 @@
 
 
 .background {
-    background-color: #001F3F ;
+    background-color: #0D1117 ;
 }
 
 
 .letters {
-    color: #3A6D8C;
+    color: #b7c9e0;
+}
+
+.holaSoy {
+    color: #4BA5FF;
+}
+
+.nombre{
+    color:#B7C9E0;
+}
+
+.textoPresentacion{
+    color: #8B949E;
 }

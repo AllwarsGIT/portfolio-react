@@ -1,14 +1,12 @@
 import HeroContent from "./HeroContent"
 import styles from "./Hero.module.css"
 
-
-
-
 const Hero: React.FC = () => {
   return (
-    <section className={`${styles.background} relative h-screen text-white flex flex-wrap items-center justify-start overflow-hidden px-20`}>
+    <section
+      className={`${styles.background} relative w-full h-[40vh] text-blueprimary flex items-center justify-center px-20`}
+    >
       <HeroContent className={styles.letters} />
-
     </section>
   );
 };
