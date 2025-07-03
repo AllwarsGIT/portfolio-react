@@ -3,14 +3,23 @@ import styles from './Header.module.css'
 
 function Header() {
   return (
-    <header className="px-20 py-10 fixed top-0 left-0 w-full bg-transparent flex z-50  flex items-center">
-      <nav className={`${styles.nav} flex flex-wrap w-full justify-between`}>
+    <header className={`${styles.nav} sticky top-0 px-10 left-0 w-full flex flex items-center z-10`}>
+      <nav className={`${styles.nav}  flex flex-wrap py-5  w-full justify-between`}>
         <a className="font-bold text-2xl">Álvaro.S</a>
-        <ol className="font-bold flex flex-wrap space-x-15 text-xl">
-            <li className="">Inicio</li>
-            <li className="">Sobre mí</li>
-            <li className="">Contacto</li>
+        <ol className=" flex flex-wrap space-x-15 text-xl">
+            <li className="flex items-baseline">
+              <span className={`${styles.navNumbers} text-sm font-mono mr-2`}>01.</span>
+              <p className="text-lg font-semibold">Proyectos</p>
+            </li>
+            <li className="flex items-baseline">
+              <span className={`${styles.navNumbers} text-sm font-mono mr-2`}>02.</span>
+              <p className="text-lg font-semibold">Acerca de</p>
+            </li>            <li className="flex items-baseline">
+              <span className={`${styles.navNumbers} text-sm font-mono mr-2`}>03.</span>
+              <p className="text-lg font-semibold">Contacto</p>
+            </li>
         </ol>
+      <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
       </nav>  
     </header>
   )

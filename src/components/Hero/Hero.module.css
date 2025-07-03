@@ -20,3 +20,8 @@
 .textoPresentacion{
     color: #8B949E;
 }
+
+.blueShadow {
+  box-shadow: 0 4px 24px 0 #1F6FEB;
+    border-radius: 9999px;
+}

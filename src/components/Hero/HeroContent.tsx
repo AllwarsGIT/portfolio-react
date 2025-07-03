@@ -10,7 +10,7 @@ const HeroContent: React.FC<HeroContentProps> = ({ className }) => {
     <div
       className={`flex flex-col justify-center items-center w-full h-full px-4 sm:px-6 md:px-8 ${className ?? ''}`}
     >
-      <div className="max-w-md w-full text-left"> 
+      <div className={`max-w-md w-full text-left`}> 
         <p className={`${styles.holaSoy} text-grayDark text-1xl font-semibold mb-4`}>
           Hola, soy
         </p>

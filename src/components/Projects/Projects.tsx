@@ -1,0 +1,24 @@
+import styles from './Projects.module.css'
+import ProjectCard from '../ProjectCard/ProjectCard'
+import React from 'react'
+
+function Projects() {
+  return (
+   <div className={`${styles.bgProjects} `}>
+    <div className="container mx-auto px-4 text-left">
+        <div className="flex items-baseline">
+            <span className={`${styles.titleNumber} text-2xl font-mono mr-2`}>01.</span>
+            <h2 className={`${styles.title} text-3xl font-bold mt-20 mb-6`}>Mis Proyectos</h2>
+        </div>
+
+        <div className="mt-10  flex flex-col gap-8">
+            <ProjectCard src ="https://job-searching-app-react.vercel.app/" title="Proyecto1" description="Esta es la descripcion de prueba"/>
+            <ProjectCard title="Proyecto2" description="Esta es la descripcion de prueba"/>
+            <ProjectCard title="Proyecto3" description="Esta es la descripcion de prueba"/>
+        </div>
+    </div>
+</div>
+  )
+}
+
+export default Projects
