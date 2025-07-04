@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Header />
       <SideBar />
-      <main className="w-full h-screen   scroll-smooth">
+      <main className="w-full h-screen  borderBottomGradient scroll-smooth">
         <Hero />
         <Projects />
       </main>

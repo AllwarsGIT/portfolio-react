@@ -10,14 +10,14 @@ const HeroContent: React.FC<HeroContentProps> = ({ className }) => {
     <div
       className={`flex flex-col justify-center items-center w-full h-full px-4 sm:px-6 md:px-8 ${className ?? ''}`}
     >
-      <div className={`max-w-md w-full text-left`}> 
+      <div className={`${styles.textResponsive} max-w-md w-full text-left m-5`}> 
         <p className={`${styles.holaSoy} text-grayDark text-1xl font-semibold mb-4`}>
           Hola, soy
         </p>
         <p className={`${styles.nombre} text-bluePrimary text-5xl font-bold mb-4`}>
           Álvaro Sánchez.
         </p>
-        <p className={`${styles.textoPresentacion} text-grayDark font-bold text-5xl mb-4 `}>
+        <p className={`${styles.title} text-grayDark font-bold text-5xl mb-4 `}>
           Front developer.
         </p>
         <p className={`${styles.textoPresentacion} text-grayLight text-m `}>

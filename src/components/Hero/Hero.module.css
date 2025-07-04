@@ -1,27 +1,81 @@
-
-
 .background {
-    background-color: #0D1117 ;
+    background-color: #0D1117;
 }
-
 
 .letters {
     color: #b7c9e0;
+}
+
+.textResponsive {
+    line-height: 1.1;
+    white-space: nowrap;
+    font-size: 2.5rem; 
+}
+
+@media (max-width: 768px) {
+    .textResponsive {
+        font-size: 1.5rem;
+        white-space: normal;
+    }
+
+    .nombre {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .textoPresentacion {
+        font-size: 1.2rem;
+    }
+
+    .holaSoy {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .textResponsive {
+        font-size: 1.2rem;
+        line-height: 1.2;
+        white-space: normal;
+    }
+
+    .nombre {
+        font-size: 1.5rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .textoPresentacion {
+        font-size: 1rem;
+    }
+
+    .holaSoy {
+        font-size: 0.8rem;
+    }
 }
 
 .holaSoy {
     color: #4BA5FF;
 }
 
-.nombre{
-    color:#B7C9E0;
+.title {
+    color: #8B949E;
 }
 
-.textoPresentacion{
+.nombre {
+    color: #B7C9E0;
+}
+
+.textoPresentacion {
     color: #8B949E;
 }
 
 .blueShadow {
-  box-shadow: 0 4px 24px 0 #1F6FEB;
+    box-shadow: 0 4px 24px 0 #1F6FEB;
     border-radius: 9999px;
 }
