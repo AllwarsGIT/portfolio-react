@@ -12,12 +12,16 @@ function Projects() {
         </div>
 
         <div className="mt-10  flex flex-col gap-8">
-            <ProjectCard src ="https://job-searching-app-react.vercel.app/" title="Proyecto1" description="Esta es la descripcion de prueba"/>
-            <ProjectCard title="Proyecto2" description="Esta es la descripcion de prueba"/>
-            <ProjectCard title="Proyecto3" description="Esta es la descripcion de prueba"/>
+            <ProjectCard 
+                src ="https://job-searching-app-react.vercel.app/"
+                last = "Proyecto reciente" 
+                title="Aplicación de búsqueda de trabajo" 
+                description="Aplicación web construida con React que permite visualizar ofertas de empleo mediante tarjetas organizadas. Incluye navegación entre páginas de resultados y detalle individual de cada oferta. Implementación con React Router, diseño responsive y uso de datos estáticos de prueba."/>
         </div>
     </div>
+    
 </div>
+
   )
 }
 

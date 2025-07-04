@@ -16,8 +16,8 @@ const AppEmbed = ({src}: AppEmbedProps) => {
       style={{
         width: widthScaled,
         height: heightScaled,
-        border: '2px solid #333',
-        borderRadius: '8px',
+        border: 'none',
+        borderRadius: '4px',
         overflow: 'hidden',
         position: 'relative',
         margin: 'auto',
