@@ -11,13 +11,13 @@ function Header() {
               <span className={`${styles.navNumbers} text-sm font-mono mr-2`}>01.</span>
               <p className="text-lg font-semibold">Proyectos</p>
             </li>
-            <li className="flex items-baseline">
+            {/* <li className="flex items-baseline">
               <span className={`${styles.navNumbers} text-sm font-mono mr-2`}>02.</span>
               <p className="text-lg font-semibold">Acerca de</p>
             </li>            <li className="flex items-baseline">
               <span className={`${styles.navNumbers} text-sm font-mono mr-2`}>03.</span>
               <p className="text-lg font-semibold">Contacto</p>
-            </li>
+            </li> */}
         </ol>
       <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
       </nav>  
