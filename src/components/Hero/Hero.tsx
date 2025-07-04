@@ -4,9 +4,9 @@ import styles from "./Hero.module.css"
 const Hero: React.FC = () => {
   return (
     <section
-      className={`${styles.background} borderBottomGradient relative w-full min-h-[40vh] text-blueprimary flex items-center justify-center px-20`}
+      className={`${styles.background} borderBottomGradient relative w-full min-h-[40vh] text-center flex items-center justify-center px-4  md:px-16 lg:px-20`}
     >
-      <HeroContent className={`${styles.letters} ${styles.textResponsive}`} />
+      <HeroContent className={`${styles.letters} `} />
     </section>
   );
 };
