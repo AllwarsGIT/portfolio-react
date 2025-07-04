@@ -3,8 +3,8 @@ import styles from './Header.module.css'
 
 function Header() {
   return (
-    <header className={`${styles.nav} sticky top-0 px-10 left-0 w-full flex flex items-center z-10`}>
-      <nav className={`${styles.nav}  flex flex-wrap py-5  w-full justify-between`}>
+    <header className={`${styles.nav} ${styles.borderBottomGradient} sticky top-0 px-10 left-0 w-full flex flex items-center z-10`}>
+      <nav className={`${styles.nav} flex flex-wrap py-5  w-full justify-between`}>
         <a className="font-bold text-2xl">Álvaro.S</a>
         <ol className=" flex flex-wrap space-x-15 text-xl">
             <li className="flex items-baseline">
@@ -19,7 +19,6 @@ function Header() {
               <p className="text-lg font-semibold">Contacto</p>
             </li> */}
         </ol>
-      <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
       </nav>  
     </header>
   )

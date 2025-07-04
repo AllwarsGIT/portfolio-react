@@ -8,3 +8,18 @@
 .navNumbers {
     color: #4BA5FF;
 }
+
+.borderBottomGradient {
+    
+}
+
+.borderBottomGradient::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #9ca3af 50%, transparent);
+  pointer-events: none;
+}
