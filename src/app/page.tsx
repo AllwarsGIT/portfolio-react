@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <SideBar />
-      <main className="w-full h-screen scroll-smooth">
+      <main className="w-full  scroll-smooth">
         <Hero />
         <Projects />
       </main>
