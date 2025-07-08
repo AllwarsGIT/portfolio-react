@@ -24,10 +24,10 @@ function ProjectCard({title="title", description="description", src, last=""}: P
             <p className="text-bluePrimary text-sm font-mono">
                 {last}
             </p>
-            <h3 className="title text-2xl font-bold mb-5 self-start">
+            <h3 className="text-grayPrimary title text-2xl font-bold mb-5 self-start">
                 {title}
             </h3>
-            <div className="flex-1 flex items-center">
+            <div className="text-graySecondary flex-1 flex items-center">
                 <div className="shadow-md bg-card p-5 rounded-tl-lg rounded-bl-lg w-full border-r-4 border-bluePrimary">
                     <p className="description">{description}</p>
                 </div>
