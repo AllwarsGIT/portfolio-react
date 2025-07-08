@@ -1,27 +1,24 @@
 import React from 'react';
-import styles from './Hero.module.css';
 
-interface HeroContentProps {
-  className?: string;
-}
 
-const HeroContent: React.FC<HeroContentProps> = ({ className }) => {
+
+const HeroContent: React.FC = () => {
   return (
     <div
-      className={`flex flex-col justify-center items-center w-full h-full px-4  md:px-8 ${className ?? ''}`}
+      className="flex flex-col justify-center items-center w-full h-full px-4  md:px-8" 
     >
-      <div className={`${styles.textResponsive} mx-auto max-w-md w-full text-left px-4 sm:px-8 `}> 
-        <p className="text-blue-400 font-semibold mb-4 text-base  md:text-xl lg:text-2xl">
+      <div className="mx-auto max-w-md w-full text-left px-4 sm:px-8 "> 
+        <p className="text-bluePrimary font-semibold mb-4 text-base  md:text-xl lg:text-2xl">
           Hola, soy
         </p>
-        <p className="text-blue-200 font-bold mb-4 text-2xl  md:text-4xl lg:text-5xl">
+        <p className="text-blueSecondary font-bold mb-4 text-2xl  md:text-4xl lg:text-5xl">
           Álvaro Sánchez.
         </p>
-        <p className="text-gray-400 font-bold mb-4 text-2xl  md:text-4xl lg:text-5xl">
+        <p className="text-graySecondary font-bold mb-4 text-2xl  md:text-4xl lg:text-5xl">
           Front developer.
         </p>
-        <p className="text-gray-500 text-sm sm:text-base md:text-xl">
-          Desarrollo webs limpias, accesibles y con estilo.
+        <p className="text-grayTertiary text-sm sm:text-base md:text-xl">
+          Desarrollo webs limpias, accesibles y responsive.
         </p>
       </div>
     </div>

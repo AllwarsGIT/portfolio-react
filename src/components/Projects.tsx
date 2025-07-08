@@ -1,14 +1,13 @@
-import styles from './Projects.module.css'
-import ProjectCard from '../ProjectCard/ProjectCard'
+import ProjectCard from './ProjectCard'
 import React from 'react'
 
 function Projects() {
   return (
-   <div className={`${styles.bgProjects} `}>
+   <div className="bg-blackPrimary">
     <div className="container mx-auto px-4 text-left">
         <div className="flex items-baseline">
-            <span className={`${styles.titleNumber} text-2xl font-mono mr-2`}>01.</span>
-            <h2 className={`${styles.title} text-3xl font-bold mt-15 `}>Mis Proyectos</h2>
+            <span className="text-bluePrimary text-2xl font-mono mr-2">01.</span>
+            <h2 className="text-grayPrimary text-3xl font-bold mt-15">Mis Proyectos</h2>
         </div>
 
         <div className="flex flex-col gap-8">

@@ -1,6 +1,5 @@
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
-import styles from "./SideBar.module.css"
 import React from "react";
 
 function SideBar() {
@@ -9,16 +8,16 @@ function SideBar() {
         <ul className="flex flex-col items-center space-y-4">
             <li className="hover:text-blueprimary transition-colors duration-300">
             <a href="https://github.com/AllwarsGIT" target="_blank" rel="noopener noreferrer">
-                <FiGithub size={24} className={styles.defaultColor}/>
+                <FiGithub size={24} className="text-graySecondary hover:text-bluePrimary transform scale-110 transition-colors duration-200"/>
             </a>
             </li>
             <li className="hover:text-blueprimary transition-colors duration-300">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin size={24} className={styles.defaultColor}/>
+            <a href="https://www.linkedin.com/in/%C3%A1lvaro-s%C3%A1nchez-831705366/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin size={24} className="text-graySecondary hover:text-bluePrimary transform scale-110 transition-colors duration-200"/>
             </a>
             </li>
         </ul>
-        <div className={`${styles.barColor} w-[1px] h-25 mt-4`} />
+        <div className="bg-graySecondary w-[1px] h-25 mt-4" />
     </div>
   );
 }

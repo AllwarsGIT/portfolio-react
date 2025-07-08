@@ -10,6 +10,16 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-grayPrimary: #B7C9E0;
+  --color-graySecondary: #8B949E;
+  --color-grayTertiary: #6a7282;
+  --color-bluePrimary: #4BA5FF;
+  --color-blueSecondary: #bedbff;
+  --color-blackPrimary: #0D1117;
+  --color-card: #161f29;
+
+  --shadow-3xl:  2px 4px 8px 0 rgba(0, 0, 0, 0.15);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,22 +36,6 @@ body {
 }
 
 
-.title {
-    color: #B7C9E0;
-}
-
-.highlightTitle{
-    color: #4BA5FF;
-}
-
-.description{
-    color: #A1AFBF;
-}
-
-.cardBackground{
-    background-color: #161f29 ;
-
-}
 
 .borderBottomGradient {
     
