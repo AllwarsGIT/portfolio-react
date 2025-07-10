@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
             </h1>
           </div>
           <div className="">
-            <h2 className="text-blueSecondary font-bold mb-4  hero-responsive ">
+            <h2 className="text-blueSecondary font-bold mb-2  hero-responsive ">
             Álvaro Sánchez.
             </h2>
           </div>
@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
             Desarrollo webs limpias, accesibles y responsive.
             </p>
           </div>
-          <div className="block md:hidden ">
+          <div className="block md:hidden mb-5">
             <ul className="mt-8 text-graySecondary flex flex-row">
               <li className="mr-5">
                 <a href="https://github.com/AllwarsGIT" target="_blank" rel="noopener noreferrer">
