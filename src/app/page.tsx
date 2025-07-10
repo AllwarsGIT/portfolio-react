@@ -1,4 +1,4 @@
-import Hero from "../components/Hero/Hero";
+import Hero from "../components/Hero"
 import SideBar from "../components/SideBar"
 import Projects from "../components/Projects"
 

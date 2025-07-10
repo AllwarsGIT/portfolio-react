@@ -1,3 +1,5 @@
+import { FiGithub } from "react-icons/fi";
+import { FaLinkedin } from "react-icons/fa";
 
 const Hero: React.FC = () => {
   return (
@@ -24,6 +26,20 @@ const Hero: React.FC = () => {
             <p className="text-grayTertiary text-sm md:text-base lg:text-lg">
             Desarrollo webs limpias, accesibles y responsive.
             </p>
+          </div>
+          <div className="block md:hidden ">
+            <ul className="mt-8 text-graySecondary flex flex-row">
+              <li className="mr-5">
+                <a href="https://github.com/AllwarsGIT" target="_blank" rel="noopener noreferrer">
+                  <FiGithub size={24}/>
+                </a>
+              </li> 
+              <li className="mr-5">
+                <a href="https://www.linkedin.com/in/%C3%A1lvaro-s%C3%A1nchez-831705366/" target="_blank" rel="noopener noreferrer">
+                  <FaLinkedin size={24}/>
+                </a>
+              </li> 
+            </ul>
           </div>
       </div>
     </section>
