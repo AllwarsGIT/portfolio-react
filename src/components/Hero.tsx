@@ -3,9 +3,9 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Hero: React.FC = () => {
   return (
-    <section className="w-full flex flex-col justify-center items-center ">
+    <section className="w-full flex flex-col justify-center items-center border-b-1 border-grayTertiary ">
       <div
-      className="bg-blackPrimary relative max-w-[1000px] min-h-[40vh]  flex flex-col justify-center items-start  px-10  "
+      className="bg-blackPrimary relative max-w-[1000px] min-h-[40vh] m-5 md:m-0  flex flex-col justify-center items-start  px-10  "
     >
           <div className="">
             <h1 className="text-bluePrimary font-semibold mb-4 text-base ">
@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
             Desarrollo webs limpias, accesibles y responsive.
             </p>
           </div>
-          <div className="block md:hidden mb-5">
+          <div className="block md:hidden">
             <ul className="mt-8 text-graySecondary flex flex-row">
               <li className="mr-5">
                 <a href="https://github.com/AllwarsGIT" target="_blank" rel="noopener noreferrer">

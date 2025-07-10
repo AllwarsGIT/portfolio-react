@@ -11,13 +11,18 @@ function Header() {
 
 const handleMenuClick = (id: string) => {
   const element = document.getElementById(id);
-  if (element) {
-    const yOffset = -80; // Ajusta según el header fijo
-    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: y, behavior: 'smooth' });
+  const header = document.querySelector("header");
+
+  if (element && header) {
+    const headerHeight = header.getBoundingClientRect().height;
+    const y = element.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+    window.scrollTo({ top: y, behavior: "smooth" });
   }
+
   setIsOpen(false);
 };
+
 
 
 
