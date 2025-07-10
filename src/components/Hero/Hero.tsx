@@ -1,12 +1,33 @@
-import HeroContent from "./HeroContent"
 
 const Hero: React.FC = () => {
   return (
-    <section
-      className="bg-blackPrimary borderBottomGradient relative w-full min-h-[40vh] text-center flex items-center justify-center px-4  md:px-16 lg:px-20"
+    <section className="w-full flex flex-col justify-center items-center ">
+      <div
+      className="bg-blackPrimary relative max-w-[1000px] min-h-[40vh]  flex flex-col justify-center items-start  px-10  "
     >
-      <HeroContent  />
+          <div className="">
+            <h1 className="text-bluePrimary font-semibold mb-4 text-base ">
+            Hola, soy
+            </h1>
+          </div>
+          <div className="">
+            <h2 className="text-blueSecondary font-bold mb-4  hero-responsive ">
+            Álvaro Sánchez.
+            </h2>
+          </div>
+          <div className="">
+            <h3 className="text-graySecondary font-bold mb-4  hero-responsive ">
+            Desarrollador Front-end.
+            </h3>
+          </div>
+          <div className="">
+            <p className="text-grayTertiary text-sm md:text-base lg:text-lg">
+            Desarrollo webs limpias, accesibles y responsive.
+            </p>
+          </div>
+      </div>
     </section>
+    
   );
 };
 

@@ -3,7 +3,7 @@ import React from 'react'
 
 function Projects() {
   return (
-   <div className="bg-blackPrimary">
+   <section id="projects" className="bg-blackPrimary border-t-1 border-grayTertiary">
     <div className="container mx-auto px-4 text-left">
         <div className="flex items-baseline">
             <span className="text-bluePrimary text-2xl font-mono mr-2">01.</span>
@@ -16,9 +16,19 @@ function Projects() {
                 last = "Proyecto reciente" 
                 title="Aplicación de búsqueda de trabajo" 
                 description="Aplicación web construida con React que permite visualizar ofertas de empleo mediante tarjetas organizadas. Incluye navegación entre páginas de resultados y detalle individual de cada oferta. Implementación con React Router, diseño responsive y uso de datos estáticos de prueba."/>
+            {/* <ProjectCard 
+                src ="https://job-searching-app-react.vercel.app/"
+                last = "Proyecto reciente" 
+                title="Aplicación de búsqueda de trabajo" 
+                description="Aplicación web construida con React que permite visualizar ofertas de empleo mediante tarjetas organizadas. Incluye navegación entre páginas de resultados y detalle individual de cada oferta. Implementación con React Router, diseño responsive y uso de datos estáticos de prueba."/>
+            <ProjectCard 
+                src ="https://job-searching-app-react.vercel.app/"
+                last = "Proyecto reciente" 
+                title="Aplicación de búsqueda de trabajo" 
+                description="Aplicación web construida con React que permite visualizar ofertas de empleo mediante tarjetas organizadas. Incluye navegación entre páginas de resultados y detalle individual de cada oferta. Implementación con React Router, diseño responsive y uso de datos estáticos de prueba."/> */}
         </div>
     </div>
-</div>
+</section>
 
   )
 }
