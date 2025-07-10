@@ -37,11 +37,14 @@ const handleMenuClick = (id: string) => {
         {/* Menú normal */}
 
         <ul className="hidden md:flex flex-wrap space-x-15 text-xl ">
-            <li className="flex items-baseline transition-all ease-in-out duration-200 cursor-pointer hover:text-bluePrimary ">
+            <li 
+            className="flex items-baseline transition-all ease-in-out duration-200 cursor-pointer hover:text-bluePrimary "
+            onClick={() => handleMenuClick("projects")}
+            >
               <span className="text-bluePrimary text-sm font-mono mr-2">01.</span>
               <a
                 className="text-base font-semibold"
-                onClick={() => handleMenuClick("projects")}
+                
               >
                 Proyectos
               </a>

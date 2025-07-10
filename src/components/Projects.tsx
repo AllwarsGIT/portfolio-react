@@ -3,11 +3,11 @@ import React from 'react'
 
 function Projects() {
   return (
-   <section id="projects" className="bg-blackPrimary ">
-    <div className="container mx-auto px-4 text-left">
-        <div className="flex items-baseline">
-            <span className="text-bluePrimary text-2xl font-mono mr-2">01.</span>
-            <h2 className="text-grayPrimary text-3xl font-bold mt-15">Mis Proyectos</h2>
+   <section id="projects" className="bg-blackPrimary w-full flex justify-center items-center">
+    <div className="container mx-auto px-4 text-left ">
+        <div className="flex items-baseline justify-center md:justify-start md:m-20 items p-10">
+            <span className="text-bluePrimary number-responsive font-mono mr-2 md:text-left">01.</span>
+            <h2 className="text-grayPrimary  font-bold mt-15 header-responsive">Mis Proyectos</h2>
         </div>
 
         <div className="flex flex-col gap-8">
@@ -16,7 +16,7 @@ function Projects() {
                 last = "Proyecto reciente" 
                 title="Aplicación de búsqueda de trabajo" 
                 description="Aplicación web construida con React que permite visualizar ofertas de empleo mediante tarjetas organizadas. Incluye navegación entre páginas de resultados y detalle individual de cada oferta. Implementación con React Router, diseño responsive y uso de datos estáticos de prueba."/>
-            <ProjectCard 
+            {/* <ProjectCard 
                 src ="https://job-searching-app-react.vercel.app/"
                 last = "Proyecto reciente" 
                 title="Aplicación de búsqueda de trabajo" 
@@ -25,7 +25,7 @@ function Projects() {
                 src ="https://job-searching-app-react.vercel.app/"
                 last = "Proyecto reciente" 
                 title="Aplicación de búsqueda de trabajo" 
-                description="Aplicación web construida con React que permite visualizar ofertas de empleo mediante tarjetas organizadas. Incluye navegación entre páginas de resultados y detalle individual de cada oferta. Implementación con React Router, diseño responsive y uso de datos estáticos de prueba."/>
+                description="Aplicación web construida con React que permite visualizar ofertas de empleo mediante tarjetas organizadas. Incluye navegación entre páginas de resultados y detalle individual de cada oferta. Implementación con React Router, diseño responsive y uso de datos estáticos de prueba."/> */}
         </div>
     </div>
 </section>
