@@ -29,10 +29,10 @@
     font-size: clamp(25px, 5vw, 50px);
   }
   .header-responsive {
-    font-size: clamp(20px, 5vw, 30px);
+    font-size: clamp(23px, 5vw, 30px);
   }
   .number-responsive {
-    font-size: clamp(15px, 4vw, 25px);
+    font-size: clamp(16px, 4vw, 25px);
   }
 
 }

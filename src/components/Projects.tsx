@@ -5,9 +5,9 @@ function Projects() {
   return (
    <section id="projects" className="bg-blackPrimary w-full flex justify-center items-center">
     <div className="container mx-auto px-4 text-left ">
-        <div className="flex items-baseline justify-center md:justify-start md:m-20 items p-10">
+        <div className="flex items-baseline justify-center md:justify-start mt-15 items p-5 md:mt-5">
             <span className="text-bluePrimary number-responsive font-mono mr-2 md:text-left">01.</span>
-            <h2 className="text-grayPrimary  font-bold mt-15 header-responsive">Mis Proyectos</h2>
+            <h2 className="text-grayPrimary  font-bold  header-responsive">Mis Proyectos</h2>
         </div>
 
         <div className="flex flex-col gap-8">
