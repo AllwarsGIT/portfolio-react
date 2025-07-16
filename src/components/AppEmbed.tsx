@@ -3,7 +3,7 @@ interface AppEmbedProps {
   className?: string;
 }
 
-const AppEmbed = ({ src = "", className = "" }: AppEmbedProps) => {
+const AppEmbed = ({ src, className = "" }: AppEmbedProps) => {
   return (
     <div
       className={`w-full h-[300px] ${className}`}
