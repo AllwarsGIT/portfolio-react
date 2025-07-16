@@ -1,6 +1,5 @@
 
 import React from 'react'
-import AppEmbed from './AppEmbed'
 // import { FaReact } from "react-icons/fa";
 // import { FaNode } from "react-icons/fa";
 // import { TbBrandTypescript } from "react-icons/tb";
@@ -18,7 +17,7 @@ interface ProjectCardProps {
 }
 
 
-function ProjectCard({title="title", description="description", src = "", last=""}: ProjectCardProps) {
+function ProjectCard({title="title", description="description",  last=""}: ProjectCardProps) {
   return (
     <div className= "w-5/6 min-h-[24rem] bg-transparent rounded-lg shadow-lg p-6 flex  flex-wrap justify-center items-center m-5 mx-auto">
         <div className="flex-1 flex flex-col h-full">
