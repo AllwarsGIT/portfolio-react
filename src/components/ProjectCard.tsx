@@ -35,9 +35,9 @@ function ProjectCard({title="title", description="description", src = "", last="
             </div>
             <div className="flex flex-col gap-4 justify-between text-[30px] pt-4 text-graySecondary ">
 
-                <div className="md:hidden mt-1">
+                {/* <div className="md:hidden mt-1">
                     <AppEmbed src={src} className="self-center" />
-                </div>
+                </div> */}
                 
                 <div className="flex gap-4">
                     <TechBadge techName="React" />
