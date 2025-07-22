@@ -6,7 +6,7 @@ import React from 'react'
 import { FiGithub } from "react-icons/fi";
 import { TbExternalLink } from "react-icons/tb";
 import TechBadge from './TechBadge';
-
+// import Image from 'next/image';
 
 
 interface ProjectCardProps {
@@ -19,7 +19,7 @@ interface ProjectCardProps {
 
 function ProjectCard({title="title", description="description",  last=""}: ProjectCardProps) {
   return (
-    <div className= "w-5/6 min-h-[24rem] bg-transparent rounded-lg shadow-lg p-6 flex  flex-wrap justify-center items-center m-5 mx-auto">
+    <div className= "md:w-4/7 min-h-[24rem] bg-transparent rounded-lg shadow-lg p-6 flex flex-wrap justify-center items-center m-5 mx-auto">
         <div className="flex-1 flex flex-col h-full">
             <p className="text-bluePrimary text-sm font-mono">
                 {last}
@@ -52,17 +52,18 @@ function ProjectCard({title="title", description="description",  last=""}: Proje
                         <TbExternalLink />
                     </a>
                 </div>               
-
-                {/* <div className="hidden md:flex  gap-4">
-                    <FaReact />
-                    <FaNode />
-                    <TbBrandTypescript />
-                </div> */}
             </div>
         </div>
         {/* <div className="hidden md:block w-full md:w-[50%]">
             <AppEmbed src={src} className="self-center" />
         </div> */}
+        {/* <Image
+            src="https://placehold.co/600x400/png"
+            alt="Project Image"
+            className="w-full h-full object-cover rounded-lg"
+            width={600}
+            height={400}
+        /> */}
     </div>
 
   )

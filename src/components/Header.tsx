@@ -28,9 +28,9 @@ const handleMenuClick = (id: string) => {
 
   return (
 
-    <header className="bg-blackPrimary border-b-1 border-grayTertiary sticky top-0 px-10 left-0 w-full flex  items-center z-10">
+    <header className="bg-card  sticky top-0 px-10 left-0 w-full flex  items-center z-10">
       <nav className="text-graySecondary flex items-center py-5  w-full justify-items-center justify-between">
-        <a className="font-bold text-lg">Álvaro.S</a>
+        <a className="font-bold text-lg text-grayPrimary">Álvaro.S</a>
 
 
 
@@ -49,14 +49,30 @@ const handleMenuClick = (id: string) => {
                 Proyectos
               </a>
             </li>
-            <li className="flex items-baseline transition-all ease-in-out duration-200 cursor-pointer hover:text-bluePrimary">
+            <li 
+            className="flex items-baseline transition-all ease-in-out duration-200 cursor-pointer hover:text-bluePrimary "
+            onClick={() => handleMenuClick("aboutme")}
+            >
               <span className="text-bluePrimary text-sm font-mono mr-2">02.</span>
-              <p className="text-base font-semibold">Acerca de</p>
+              <a
+                className="text-base font-semibold"
+                
+              >
+                Acerca de
+              </a>
             </li>
-            <li className="flex items-baseline transition-all ease-in-out duration-200 cursor-pointer hover:text-bluePrimary">
+            {/* <li 
+            className="flex items-baseline transition-all ease-in-out duration-200 cursor-pointer hover:text-bluePrimary "
+            onClick={() => handleMenuClick("contact")}
+            >
               <span className="text-bluePrimary text-sm font-mono mr-2">03.</span>
-              <p className="text-base font-semibold">Contacto </p>
-            </li>
+              <a
+                className="text-base font-semibold"
+                
+              >
+                Contacto
+              </a>
+            </li> */}
         </ul>
 
 
@@ -65,7 +81,7 @@ const handleMenuClick = (id: string) => {
           {/* Menú para móvil */}      
         {isOpen && (
           <ul className="md:hidden flex flex-col space-y-4 text-xl p-4">
-            <li className="flex items-baseline">
+            <li className="flex items-baseline cursor-pointer">
               <span className="text-bluePrimary text-sm font-mono mr-2">01.</span>
                 <a
                   className="text-base font-semibold"
@@ -74,24 +90,24 @@ const handleMenuClick = (id: string) => {
                   Proyectos
                 </a>
             </li>
-            <li className="flex items-baseline">
+            <li className="flex items-baseline cursor-pointer">
               <span className="text-bluePrimary text-sm font-mono mr-2">02.</span>
                 <a
                   className="text-base font-semibold"
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => handleMenuClick("aboutme")}
                 >
                   Acerca de
                 </a>
             </li>
-            <li className="flex items-baseline">
+            {/* <li className="flex items-baseline cursor-pointer">
               <span className="text-bluePrimary text-sm font-mono mr-2">03.</span>
                 <a
                   className="text-base font-semibold"
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => handleMenuClick("contact")}
                 >
                   Contacto
                 </a>
-            </li>
+            </li> */}
 
           </ul>
         )}

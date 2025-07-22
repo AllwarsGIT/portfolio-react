@@ -3,7 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Hero: React.FC = () => {
   return (
-    <section className="w-full flex flex-col justify-center items-center border-b-1 border-grayTertiary ">
+    <section className="w-full flex flex-col justify-center items-center  ">
       <div
       className="bg-blackPrimary relative max-w-[1000px] min-h-[40vh] m-5 md:m-0  flex flex-col justify-center items-start  px-10  "
     >
