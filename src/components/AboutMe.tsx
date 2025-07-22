@@ -24,7 +24,7 @@ function AboutMe() {
               </p>
               <br />
               <p className="text-graySecondary text-left ">
-                En mis aplicaciones busco tanto funcionalidad como estética, manteniendo siempre una estructura de código <span className="text-grayPrimary font-bold">limpia</span> y <span className="text-grayPrimary font-bold">mantenible</span>.
+                En mis aplicaciones busco tanto funcionalidad como estética, priorizando siempre una estructura de código <span className="text-grayPrimary font-bold">limpia</span> y <span className="text-grayPrimary font-bold">mantenible</span>.
               </p>
               <br />
               <p className="text-graySecondary text-left ">
