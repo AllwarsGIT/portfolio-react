@@ -30,6 +30,19 @@ function ProjectCard({title="title", description="description",  last=""}: Proje
             <div className="text-graySecondary flex-1 flex items-center">
                 <div className="shadow-md bg-card p-5 rounded-lg rounded-bl-lg w-full ">
                     <p className="description">{description}</p>
+                    <div className="flex justify-center mt-4 md:hidden gap-4">
+                        <TechBadge techName="React" />
+                        <TechBadge techName="Node.js" />
+                        <TechBadge techName="Typescript" />
+                    </div>
+                    <div className="flex justify-center md:hidden mt-4 gap-6 ">
+                        <a className=" hover:text-bluePrimary transition-colors duration-300 ease-in-out"  href="https://github.com/AllwarsGIT/job-searching-app-react" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <FiGithub size={30} />
+                        </a>
+                        <a className=" hover:text-bluePrimary transition-colors duration-300 ease-in-out"   href="https://job-searching-app-react.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Página web">
+                            <TbExternalLink size={30} />
+                        </a>
+                    </div>  
                 </div>
             </div>
             <div className="flex flex-col gap-4 justify-between text-[30px] pt-4 text-graySecondary ">
@@ -38,13 +51,13 @@ function ProjectCard({title="title", description="description",  last=""}: Proje
                     <AppEmbed src={src} className="self-center" />
                 </div> */}
                 
-                <div className="flex gap-4">
+                <div className="hidden md:flex md:ml-1 gap-4">
                     <TechBadge techName="React" />
                     <TechBadge techName="Node.js" />
                     <TechBadge techName="Typescript" />
                 </div>
 
-                <div className="flex gap-4 ">
+                <div className="hidden md:flex md:ml-1 gap-4 ">
                     <a className=" hover:text-bluePrimary transition-colors duration-300 ease-in-out"  href="https://github.com/AllwarsGIT/job-searching-app-react" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <FiGithub />
                     </a>

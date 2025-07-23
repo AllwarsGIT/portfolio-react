@@ -9,7 +9,7 @@ type TechBadgeProps = {
 
 function TechBadge({ techName }: TechBadgeProps) {
   return (
-    <span className="text-graySecondary px-3 py-1 rounded-full text-sm font-semibold inline-flex items-center">
+    <span className="text-grayPrimary px-3 py-1 rounded-full text-sm font-semibold inline-flex items-center">
     <MdArrowForwardIos className="text-bluePrimary mr-1"/>
       {techName}
     </span>

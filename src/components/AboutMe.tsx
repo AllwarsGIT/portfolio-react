@@ -9,7 +9,7 @@ function AboutMe() {
       <div className="mx-auto px-4 text-left w-full max-w-[1500px] ">
           <div className="flex items-baseline justify-center md:justify-start md:mx-30 my-15 p-5 max-w-[500px]">
               <span className="text-bluePrimary number-responsive font-mono mr-2 md:text-left">02.</span>
-              <h2 className="text-grayPrimary  font-bold  header-responsive">Sobre mí</h2>
+              <h2 className="text-grayPrimary  font-bold  header-responsive">Acerca de mí</h2>
               <div className=" hidden md:block bg-graySecondary h-[1px] w-40 ml-4 self-center" />
           </div>
 
@@ -56,9 +56,9 @@ function AboutMe() {
               </ul>
               
             </div>
-            <div className="flex m-8 md:mx-8 md:m-0 justify-center p-0 items-center">
+            <div className="flex m-8 md:mr-10 md:m-0 justify-center p-0 items-center">
               <Image 
-                className="rounded-md "
+                className="rounded-md"
                 src="/AlvaroLinkedin.png" 
                 alt="Foto de Álvaro Sánchez Torre" 
                 width={250} 

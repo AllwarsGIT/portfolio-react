@@ -87,7 +87,7 @@ const handleMenuClick = (id: string) => {
                   className="text-base font-semibold"
                   onClick={() => handleMenuClick("projects")}
                 >
-                  Proyectos
+                  Mis Proyectos
                 </a>
             </li>
             <li className="flex items-baseline cursor-pointer">
@@ -96,7 +96,7 @@ const handleMenuClick = (id: string) => {
                   className="text-base font-semibold"
                   onClick={() => handleMenuClick("aboutme")}
                 >
-                  Acerca de
+                  Acerca de mí
                 </a>
             </li>
             {/* <li className="flex items-baseline cursor-pointer">
