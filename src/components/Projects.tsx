@@ -17,7 +17,7 @@ function Projects() {
             <ProjectCard 
                 githubUrl="https://github.com/AllwarsGIT/job-searching-app-react"
                 demoUrl="https://job-searching-app-react.vercel.app/"
-                techName={["React", "Node.js", "Typescript"]}
+                techName={["React","Router", "Node.js", "Typescript"]}
                 last = "Proyecto reciente" 
                 title="Aplicación de búsqueda de trabajo" 
                 description="Aplicación web construida con React que permite visualizar ofertas de empleo mediante tarjetas organizadas. Incluye navegación entre páginas de resultados y detalle individual de cada oferta. Implementación con React Router, diseño responsive y uso de datos estáticos de prueba."/>
