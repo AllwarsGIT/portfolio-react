@@ -13,11 +13,13 @@ interface ProjectCardProps {
     title: string;
     description: string;
     last?:string;
-    src?:string;
+    githubUrl?:string;
+    demoUrl?:string;
+    techName?:string[];
 }
 
 
-function ProjectCard({title="title", description="description",  last=""}: ProjectCardProps) {
+function ProjectCard({title="title", description="description",  last="", githubUrl="" , demoUrl="", techName=[]}: ProjectCardProps) {
   return (
     <div className= "md:w-4/7 min-h-[24rem] bg-transparent rounded-lg shadow-lg p-6 flex flex-wrap justify-center items-center m-5 mx-auto">
         <div className="flex-1 flex flex-col h-full">
@@ -30,17 +32,27 @@ function ProjectCard({title="title", description="description",  last=""}: Proje
             <div className="text-graySecondary flex-1 flex items-center">
                 <div className="shadow-md bg-card p-5 rounded-lg rounded-bl-lg w-full ">
                     <p className="description">{description}</p>
-                    <div className="flex justify-center mt-4 md:hidden gap-4">
-                        <TechBadge techName="React" />
-                        <TechBadge techName="Node.js" />
-                        <TechBadge techName="Typescript" />
+                    <div className="flex flex-wrap justify-center mt-4 md:hidden gap-4">
+                        {techName.map((tech, index) => (
+                        <TechBadge key={index} techName={tech} />
+                    ))}
                     </div>
                     <div className="flex justify-center md:hidden mt-4 gap-6 ">
-                        <a className=" hover:text-bluePrimary transition-colors duration-300 ease-in-out"  href="https://github.com/AllwarsGIT/job-searching-app-react" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                            <FiGithub size={30} />
+                        <a 
+                        className=" hover:text-bluePrimary transition-colors duration-300 ease-in-out"  
+                        href={githubUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        >
+                            <FiGithub />
                         </a>
-                        <a className=" hover:text-bluePrimary transition-colors duration-300 ease-in-out"   href="https://job-searching-app-react.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Página web">
-                            <TbExternalLink size={30} />
+                        <a 
+                        className=" hover:text-bluePrimary transition-colors duration-300 ease-in-out"  
+                        href={demoUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        >
+                            <TbExternalLink />
                         </a>
                     </div>  
                 </div>
@@ -52,16 +64,26 @@ function ProjectCard({title="title", description="description",  last=""}: Proje
                 </div> */}
                 
                 <div className="hidden md:flex md:ml-1 gap-4">
-                    <TechBadge techName="React" />
-                    <TechBadge techName="Node.js" />
-                    <TechBadge techName="Typescript" />
+                    {techName.map((tech, index) => (
+                        <TechBadge key={index} techName={tech} />
+                    ))}
                 </div>
 
                 <div className="hidden md:flex md:ml-1 gap-4 ">
-                    <a className=" hover:text-bluePrimary transition-colors duration-300 ease-in-out"  href="https://github.com/AllwarsGIT/job-searching-app-react" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <a 
+                    className=" hover:text-bluePrimary transition-colors duration-300 ease-in-out"  
+                    href={githubUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    >
                         <FiGithub />
                     </a>
-                    <a className=" hover:text-bluePrimary transition-colors duration-300 ease-in-out"   href="https://job-searching-app-react.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Página web">
+                    <a 
+                    className=" hover:text-bluePrimary transition-colors duration-300 ease-in-out"  
+                    href={demoUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    >
                         <TbExternalLink />
                     </a>
                 </div>               
