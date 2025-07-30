@@ -62,7 +62,7 @@ function ProjectCard({title="title", description="description",  last="", github
                 {/* <div className="md:hidden mt-1">
                     <AppEmbed src={src} className="self-center" />
                 </div> */}
-                
+                 
                 <div className="hidden md:flex md:ml-1 gap-4">
                     {techName.map((tech, index) => (
                         <TechBadge key={index} techName={tech} />
