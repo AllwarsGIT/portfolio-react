@@ -32,7 +32,7 @@ function ProjectCard({title="title", description="description",  last="", github
             <div className="text-graySecondary flex-1 flex items-center">
                 <div className="shadow-md bg-card p-5 rounded-lg rounded-bl-lg w-full ">
                     <p className="description">{description}</p>
-                    <div className="flex flex-wrap justify-center mt-4 md:hidden gap-4">
+                    <div className="flex flex-wrap justify-start mt-2 md:hidden ">
                         {techName.map((tech, index) => (
                         <TechBadge key={index} techName={tech} />
                     ))}
