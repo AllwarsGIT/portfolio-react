@@ -1,20 +1,28 @@
-
+"use client"
 import Image from 'next/image'
 import React from 'react'
 import TechBadgeAboutMe from './TechBadgeAboutMe'
+import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+
 
 function AboutMe() {
+
+  const { elementRef: titleRef, isIntersecting: isTitleVisible } = useIntersectionObserver({ threshold: 0.1 });
+  const { elementRef: textRef, isIntersecting: isTextVisible } = useIntersectionObserver({ threshold: 0.1 });
+  const { elementRef: imageRef, isIntersecting: isImageVisible } = useIntersectionObserver({ threshold: 0.1 });
+
   return (
     <section id="aboutme" className="bg-blackPrimary flex justify-center items-center pb-15">
       <div className="mx-auto px-4 text-left w-full max-w-[1500px] ">
-          <div className="flex items-baseline justify-center md:justify-start md:mx-30 my-15 p-5 max-w-[500px]">
+          <div className={`flex items-baseline justify-center md:justify-start md:mx-30 my-15 p-5 max-w-[500px] ${isTitleVisible ? 'opacity-100 translate-0' : 'opacity-0 -translate-x-20'} transition-all ease-in-out duration-1000`}
+          ref={titleRef}>
               <span className="text-bluePrimary number-responsive font-mono mr-2 md:text-left">02.</span>
               <h2 className="text-grayPrimary  font-bold  header-responsive">Acerca de mí</h2>
               <div className=" hidden md:block bg-graySecondary h-[1px] w-40 ml-4 self-center" />
           </div>
 
-          <div className="flex  md:mx-30 flex-col md:flex-row items-center md:items-start justify-center text-center s p-5">
-            <div className="md:w-3/7 text-base md:text-lg">
+          <div className="flex  md:mx-30 flex-col md:flex-row items-center md:items-start justify-center text-center p-5">
+            <div className={`md:w-3/7 text-base md:text-lg ${isTextVisible ? 'opacity-100 translate-0' : 'opacity-0 translate-y-20'} transition-all ease-in-out duration-900`} ref={textRef}>
               <p className="text-graySecondary text-left ">
                 Mi nombre es <span className="text-grayPrimary font-bold">Álvaro</span> y soy desarrollador <span className="text-grayPrimary font-bold">Front-end</span> con experiencia en <span className="text-grayPrimary font-bold">diseño</span> y <span className="text-grayPrimary font-bold">desarrollo</span> de interfaces.
               </p>
@@ -56,7 +64,7 @@ function AboutMe() {
               </ul>
               
             </div>
-            <div className="flex m-8 md:mr-10 md:m-0 justify-center p-0 items-center">
+            <div className={`flex m-8  md:m-0 md:pt-10 md:pl-10 justify-center p-0 items-center ${isImageVisible ? 'opacity-100 translate-0' : 'opacity-0 translate-x-20'} transition-all ease-in-out duration-1000`} ref={imageRef}>
               <Image 
                 className="rounded-md"
                 src="/AlvaroLinkedin.png" 

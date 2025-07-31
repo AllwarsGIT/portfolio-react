@@ -1,4 +1,4 @@
-
+"use client"
 import React from 'react'
 // import { FaReact } from "react-icons/fa";
 // import { FaNode } from "react-icons/fa";
@@ -7,6 +7,7 @@ import { FiGithub } from "react-icons/fi";
 import { TbExternalLink } from "react-icons/tb";
 import TechBadge from './TechBadge';
 // import Image from 'next/image';
+import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 
 interface ProjectCardProps {
@@ -20,8 +21,17 @@ interface ProjectCardProps {
 
 
 function ProjectCard({title="title", description="description",  last="", githubUrl="" , demoUrl="", techName=[]}: ProjectCardProps) {
+
+    const { elementRef, isIntersecting } = useIntersectionObserver({
+        threshold: 0.10,
+        rootMargin: "0px 0px -50px 0px"
+    });
+
   return (
-    <div className= "md:w-4/7 min-h-[24rem] bg-transparent rounded-lg shadow-lg p-6 flex flex-wrap justify-center items-center m-5 mx-auto">
+    <div 
+    className= {`md:w-4/7 min-h-[24rem] bg-transparent rounded-lg shadow-lg p-6 flex flex-wrap justify-center items-center  mx-auto transition-all ease-in-out duration-900  ${isIntersecting ? 'opacity-100  scale-100' : 'opacity-0  scale-85'}`}
+    ref={elementRef}
+    >
         <div className="flex-1 flex flex-col h-full">
             <p className="text-bluePrimary text-sm font-mono">
                 {last}

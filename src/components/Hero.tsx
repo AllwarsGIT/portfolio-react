@@ -1,11 +1,19 @@
+"use client"
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
+import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 const Hero: React.FC = () => {
+
+  const { elementRef, isIntersecting } = useIntersectionObserver({
+    threshold: 0.05
+  })
+
   return (
     <section className="w-full flex flex-col justify-center items-center  ">
       <div
-      className="bg-blackPrimary relative max-w-[1000px] min-h-[40vh] m-5 md:m-0  flex flex-col justify-center items-start  px-10  "
+      className={`bg-blackPrimary relative max-w-[1000px] min-h-[40vh] m-5 md:m-0  flex flex-col justify-center items-start  px-10 transition-all ease-in-out duration-1000 ${isIntersecting ? 'opacity-100 translate-0' : 'opacity-0 translate-y-12'}`}
+      ref={elementRef}
     >
           <div className="">
             <h1 className="text-bluePrimary font-semibold mb-4 text-base ">

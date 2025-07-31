@@ -1,11 +1,21 @@
+"use client"
 import ProjectCard from './ProjectCard'
 import React from 'react'
+import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+
 
 function Projects() {
+
+    const { elementRef, isIntersecting } = useIntersectionObserver({
+        threshold: 0.1
+      });
+
   return (
    <section id="projects" className="bg-blackPrimary flex justify-center items-center  ">
-    <div className="mx-auto px-4 text-left max-w-[1500px] ">
-        <div className="flex items-baseline justify-center  md:justify-start md:mx-30 mt-10 p-5 max-w-[500px]">
+    <div className="mx-auto px-4 text-left max-w-[1500px]">
+        <div className={`flex items-baseline justify-center  md:justify-start md:mx-30 mt-10 p-5 max-w-[500px]  ${isIntersecting ? 'opacity-100 translate-0' : 'opacity-0 -translate-x-20'} transition-all ease-in-out duration-900`}
+        ref={elementRef}
+        >
             <span className="text-bluePrimary number-responsive font-mono mr-2 md:text-left">01.</span>
             <h2 className="text-grayPrimary  font-bold  header-responsive ">Mis Proyectos</h2>
             <div className=" hidden md:block bg-graySecondary h-[1px] w-40 ml-4 self-center" />
@@ -13,21 +23,22 @@ function Projects() {
 
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col ">
             <ProjectCard 
                 githubUrl="https://github.com/AllwarsGIT/job-searching-app-react"
                 demoUrl="https://job-searching-app-react.vercel.app/"
-                techName={["React","Router", "Node.js", "Typescript"]}
+                techName={["React", "Node.js", "Typescript"]}
                 last = "Proyecto reciente" 
                 title="Aplicación de búsqueda de trabajo" 
                 description="Aplicación web construida con React que permite visualizar ofertas de empleo mediante tarjetas organizadas. Incluye navegación entre páginas de resultados y detalle individual de cada oferta. Implementación con React Router, diseño responsive y uso de datos estáticos de prueba."/>
-            {/* <ProjectCard 
+            <ProjectCard 
                 githubUrl="https://github.com/AllwarsGIT/job-searching-app-react"
                 demoUrl="https://job-searching-app-react.vercel.app/"
                 techName={["React", "test2", "test", "test", "test", "test", "test"]}
                 last = "Proyecto reciente" 
                 title="Aplicación de búsqueda de trabajo" 
-                description="Aplicación web construida con React que permite visualizar ofertas de empleo mediante tarjetas organizadas. Incluye navegación entre páginas de resultados y detalle individual de cada oferta. Implementación con React Router, diseño responsive y uso de datos estáticos de prueba."/> */}
+                description="Aplicación web construida con React que permite visualizar ofertas de empleo mediante tarjetas organizadas. Incluye navegación entre páginas de resultados y detalle individual de cada oferta. Implementación con React Router, diseño responsive y uso de datos estáticos de prueba."/>
+            
             
         </div>
     </div>

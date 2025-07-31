@@ -3,13 +3,15 @@ import React from 'react'
 import { useState } from 'react'
 import { CiMenuBurger } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
+import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+
 
 
 function Header() {
 
   const [isOpen, setIsOpen] = useState(false);
 
-const handleMenuClick = (id: string) => {
+  const handleMenuClick = (id: string) => {
   const element = document.getElementById(id);
   const header = document.querySelector("header");
 
@@ -23,13 +25,18 @@ const handleMenuClick = (id: string) => {
   setIsOpen(false);
 };
 
+    const { elementRef, isIntersecting } = useIntersectionObserver({
+        threshold: 0.10,
+    });
 
 
 
   return (
 
-    <header className="bg-card  sticky top-0 px-10 left-0 w-full flex  items-center z-10">
-      <nav className="text-graySecondary flex items-center py-5  w-full justify-items-center justify-between">
+    <header className={`bg-card  sticky top-0 px-10 left-0 w-full flex  items-center z-10 ${isIntersecting ? 'opacity-100 translate-0' : 'opacity-0 -translate-y-10'} transition-all ease-[cubic-bezier(0.4,0,0.2,1)] duration-1500`} ref={elementRef}>
+      <nav className="text-graySecondary flex items-center py-5  w-full justify-items-center justify-between"
+        
+        >
         <a className="font-bold text-lg text-grayPrimary">Álvaro.S</a>
 
 
