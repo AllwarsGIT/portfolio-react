@@ -40,9 +40,9 @@ function AboutMe() {
               </p>
               <br />
               <p className="text-graySecondary text-left ">
-                Mis tecnologías principales son :
+                Stack tecnológico principal (<span className="text-grayPrimary font-bold">2+</span> años):
               </p>
-              <ul className=" grid grid-cols-2   text-left mt-4 gap-3">
+              <ul className=" grid grid-cols-2   text-left my-4 gap-3">
                 <li>
                   <TechBadgeAboutMe techName="React" />
                 </li>
@@ -60,6 +60,17 @@ function AboutMe() {
                 </li>
                 <li>
                   <TechBadgeAboutMe techName="Javascript" />
+                </li>
+              </ul>
+              <p className="text-graySecondary text-left ">
+                Otras Tecnologías :
+              </p>
+              <ul className=" grid grid-cols-2   text-left mt-4 gap-3">
+                <li>
+                  <TechBadgeAboutMe techName="Angular" />
+                </li>
+                <li>
+                  <TechBadgeAboutMe techName="Vue.js" />
                 </li>
               </ul>
               
