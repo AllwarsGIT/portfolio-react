@@ -2,6 +2,7 @@
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+import { FaLocationDot } from "react-icons/fa6";
 
 const Hero: React.FC = () => {
 
@@ -30,10 +31,9 @@ const Hero: React.FC = () => {
             Desarrollador Front-end.
             </h3>
           </div>
-          <div className="">
-            <p className="text-grayTertiary text-sm md:text-base lg:text-lg">
-            Desarrollo webs limpias, accesibles y responsive.
-            </p>
+          <div className="flex items-center text-grayTertiary text-sm md:text-base lg:text-lg">
+            <FaLocationDot className="mr-2" />
+            <span>Salamanca, España (trabajo local o remoto)</span>
           </div>
           <div className="block self-center md:hidden">
             <ul className="mt-8 text-graySecondary flex flex-row">
