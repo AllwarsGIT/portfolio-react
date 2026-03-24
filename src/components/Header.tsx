@@ -22,8 +22,8 @@ function Header() {
     window.scrollTo({ top: y, behavior: "smooth" });
   }
 
-  setIsOpen(false);
-};
+    setIsOpen(false);
+  };  
 
     const { elementRef, isIntersecting } = useIntersectionObserver({
         threshold: 0.10,

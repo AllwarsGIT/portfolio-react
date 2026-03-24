@@ -25,19 +25,20 @@ function Projects() {
 
         <div className="flex flex-col ">
             <ProjectCard 
+                githubUrl="https://github.com/AllwarsGIT/penspinning-academy"
+                demoUrl="https://penspinning-academy.vercel.app/"
+                techName={["Next.js", "React", "Typescript", "TailwindCSS"]}
+                last = "Proyecto reciente" 
+                title="Penspinning Academy" 
+                description="Plataforma de aprendizaje con generación a partir de datos con estados dinámicos, persistencia de preferencias del usuario, modo oscuro y un sistema de clasificación de trucos por familia, dificultad y modificadores. Cuenta con mas de 100 usuarios diarios."/>
+            <ProjectCard 
                 githubUrl="https://github.com/AllwarsGIT/job-searching-app-react"
                 demoUrl="https://job-searching-app-react.vercel.app/"
                 techName={["React", "Node.js", "Typescript"]}
-                last = "Proyecto reciente" 
+                last = "" 
                 title="Aplicación de búsqueda de trabajo" 
                 description="Aplicación web construida con React que permite visualizar ofertas de empleo mediante tarjetas organizadas. Incluye navegación entre páginas de resultados y detalle individual de cada oferta. Implementación con React Router, diseño responsive y uso de datos estáticos de prueba."/>
-            {/* <ProjectCard 
-                githubUrl="https://github.com/AllwarsGIT/job-searching-app-react"
-                demoUrl="https://job-searching-app-react.vercel.app/"
-                techName={["React", "test2", "test", "test", "test", "test", "test"]}
-                last = "Proyecto reciente" 
-                title="Aplicación de búsqueda de trabajo" 
-                description="Aplicación web construida con React que permite visualizar ofertas de empleo mediante tarjetas organizadas. Incluye navegación entre páginas de resultados y detalle individual de cada oferta. Implementación con React Router, diseño responsive y uso de datos estáticos de prueba."/> */}
+            
             
             
         </div>
