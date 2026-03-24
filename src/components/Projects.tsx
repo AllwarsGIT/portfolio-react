@@ -25,7 +25,7 @@ function Projects() {
 
         <div className="flex flex-col ">
             <ProjectCard 
-                // githubUrl="https://github.com/AllwarsGIT/penspinning-academy"
+                githubUrl="https://github.com/AllwarsGIT"
                 demoUrl="https://penspinning-academy.vercel.app/"
                 techName={["Next.js", "React", "Typescript", "TailwindCSS"]}
                 last = "Proyecto reciente" 
