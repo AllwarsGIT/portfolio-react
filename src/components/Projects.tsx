@@ -29,8 +29,8 @@ function Projects() {
                 demoUrl="https://penspinning-academy.vercel.app/"
                 techName={["Next.js", "React", "Typescript", "TailwindCSS"]}
                 last = "Proyecto reciente" 
-                title="Penspinning Academy" 
-                description="Plataforma de aprendizaje con generación a partir de datos con estados dinámicos, persistencia de preferencias del usuario, modo oscuro y un sistema de clasificación de trucos por familia, dificultad y modificadores. Cuenta con mas de 100 usuarios diarios."/>
+                title="Aplicacion académica en el contexto de un hobby" 
+                description="Plataforma de aprendizaje con generación a partir de datos con estados dinámicos, persistencia de preferencias del usuario, modo oscuro y un sistema de clasificación de trucos por familia, dificultad y modificadores."/>
             <ProjectCard 
                 githubUrl="https://github.com/AllwarsGIT/job-searching-app-react"
                 demoUrl="https://job-searching-app-react.vercel.app/"
