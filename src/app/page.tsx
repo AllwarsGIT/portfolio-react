@@ -4,6 +4,7 @@ import Projects from "../components/Projects"
 import AboutMe from "../components/AboutMe"
 // import ContactMe from "../components/ContactMe"
 import Footer from "../components/Footer"
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <Projects />
         <AboutMe />
+        <Analytics />
         {/* <ContactMe /> */}
       </main>
       <Footer />
