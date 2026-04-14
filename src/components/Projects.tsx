@@ -30,7 +30,7 @@ function Projects() {
                 techName={["Next.js", "React", "Typescript", "TailwindCSS"]}
                 last = "Proyecto reciente" 
                 title="Aplicacion académica para aprender trucos(Penspinning Academy)" 
-                description="Plataforma de aprendizaje con generación a partir de datos con estados dinámicos, persistencia de preferencias del usuario, modo oscuro y un sistema de clasificación de trucos por familia, dificultad y modificadores."/>
+                description="Plataforma de aprendizaje con generación a partir de datos con estados dinámicos, persistencia de preferencias del usuario, modo oscuro y un sistema de clasificación de trucos por familia, dificultad y modificadores. Comunidad activa: 2000+ miembros en discord."/>
             <ProjectCard 
                 githubUrl="https://github.com/AllwarsGIT/job-searching-app-react"
                 demoUrl="https://job-searching-app-react.vercel.app/"
